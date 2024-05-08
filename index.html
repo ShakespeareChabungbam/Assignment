@@ -5,27 +5,74 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Assignment</title>
     <style>
-        /* CSS for the textarea */
-        textarea {
-          background-image: url('background_for_textarea.webp');
-          background-size: cover;
+        /* Body styles */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            margin: 0;
+            padding: 20px;
         }
-      </style>
+
+        /* Container styles */
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+        /* Heading styles */
+        h2 {
+            color: #333;
+        }
+        
+
+        /* Textarea styles */
+        textarea {
+            width: 95%;
+            height: 150px;
+            background-image: url('background_for_textarea.webp');
+            background-size: cover;
+            border-radius: 10px;
+            padding: 10px;
+            font-size: 14px;
+            color: #333;
+        }
+
+        /* Button styles */
+        button {
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #0056b3;
+        }
+    </style>
 </head>
 <body>
-    <!-- HTML program to display an email link which displays subject text as its default subject. -->
-    <h2>Email Link with Default Subject</h2>
-    <a href="mailto:shakespearechabungbam12@gmail.com?subject=HTML Assignment">Send Email</a>
-    <br>
+    <div class="container">
+        <!-- HTML program to display an email link which displays subject text as its default subject. -->
+        <h2>Email Link with Default Subject</h2>
+        <a href="mailto:shakespearechabungbam12@gmail.com?subject=HTML Assignment"><button>Send Email</button></a>
+        <br><br>
 
-    <!-- How to make web page links without impacting search engine's page rank. -->
-    <h2>Links without Impacting Page Rank</h2>
-    <a href="https://m.facebook.com">Click!</a>
-    <br>
+        <!-- How to make web page links without impacting search engine's page rank. -->
+        <h2>Links without Impacting Page Rank</h2>
+        <a href="https://m.facebook.com"><button>Facebook</button></a>
+        <br><br>
 
-    <!-- Textarea with background image -->
-    <h2>Enter Your Comments</h2>
-    <textarea name="comments" id="comments" placeholder="Enter your comments..."></textarea>
-
+        <!-- Textarea with background image -->
+        <h2>Enter Your Comments</h2>
+        <textarea name="comments" id="comments" placeholder="Enter your comments..."></textarea>
+        <br><br>
+        
+        <button>Submit</button>
+    </div>
 </body>
 </html>
